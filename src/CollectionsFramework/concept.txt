@@ -1,0 +1,6 @@
+✅ 5-Day Learning Plan for Java Collections Framework
+Day 1: Introduction to Collections & List Interface (ArrayList, LinkedList)
+Day 2: Set Interface (HashSet, LinkedHashSet, TreeSet) + Coding Practice
+Day 3: Map Interface (HashMap, LinkedHashMap, TreeMap) + Internal Working
+Day 4: Utility Classes (Collections, Arrays), Iterators, and Comparators
+Day 5: Interview Questions, Real-World Scenarios & Coding Challenges
