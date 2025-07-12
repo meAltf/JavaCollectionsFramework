@@ -1,0 +1,50 @@
+🗓️ Day 1: Introduction to Java Collections & the List Interface
+
+* Java Collection framework(JCF) -
+- It is an unified architecture for storing, managing, and manipulating groups of data(objects) efficiently.
+
+* Key features -
+- Predefined classes & interfaces for data structures(List, Set, Map etc.)
+- Reduces the need of writing your own data structure
+- Improves performance, code reusability and maintainability
+- Providing algorithm likes sorting, searching, shuffling etc.
+
+* Collection (interface)
+  ├── List (interface)
+  │   ├── ArrayList
+  │   └── LinkedList
+  ├── Set (interface)
+  │   ├── HashSet
+  │   └── TreeSet
+  └── Queue (interface)
+      └── PriorityQueue
+
+* Map (interface) [Not part of Collection directly]
+  ├── HashMap
+  └── TreeMap
+
+* List - Ordered collections | Allows duplicates | can access elements by index | most used impl (ArrayList, LinkedList)
+
+* ArrayList- Backed by array | Fast for accessing element by index | Slower for insertions/deletions in the middle | Frequent access
+
+* LinkedList- Doubly-linked list structure | Fast for insertions/deletions | Slower for accessing elements by index | Frequent insert/delete
+
+* Interview Q&A :
+
+* Diff b/w ArrayList & LinkedList -
+- ArrayList is backed by dynamic array, supports fast access, and is better for random read access.
+- LinkedList uses nodes, making insertion/deletion faster but access slower.
+
+* Why collections better than arrays -
+- Collections grow dynamically
+- Provide useful methods(like sort, addAll, contains)
+- Can holds object(not primitives)
+- Allow more flexible and readable code
+
+* How does ArrayList grow internally -
+- When the internal array is full, ArrayList creates a new array with 1.5X the size of the current one
+- Copies all elements to the new array
+- Then adds the new elements
+
+NOTE :
+1. List is an interface not class, Classes like ArrayList & LinkedList implements it.
