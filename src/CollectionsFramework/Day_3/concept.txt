@@ -1,0 +1,35 @@
+🗓️ Day 3: Map Interface in Java (HashMap, LinkedHashMap, TreeMap)
+
+* Map -
+- Key-value pair Data Structure
+- Key : Unique identifies, Value : Data associated with key
+- No duplicate key | Each key map to atmost one value
+
+* Main Map Implementation -
+* HashMap
+- No preserve order | Not sorted | 1 Null key, many Null values | Backed by HashTable | get/put [O(1) avg]
+
+* LinkedHashMap
+- Insertion order | Not sorted | 1 Null key, many Null values | Backed by HashTable + LinkedList | get/put [O(1) avg]
+
+* TreeMap
+- No preserve order | Sorted by Key | No Null key, allow Null values | Backed by Red-Black Tree | get/put [ O(log n)]
+
+* When to use which set -
+- HashMap - Fast access | No order needed
+- LinkedHashMap - Maintain insertion order
+- TreeMap - sorted by key automatically
+
+* Interview Q&A-
+*How does HashMap work internally ?
+- Every key's hash is calculated using hashcode() method.
+- Then every hash is converted to an index, that gives bucket-index where key-value pair will be stored.
+- if the bucket is empty -> store the new node.
+- if not empty -> collision occurred Now-
+- Use equals() to check if the key already exists.
+- if yes -> update the value
+- if no -> add a new node in the same bucket
+
+NOTE:
+1- if you try to add duplicate key in map, it will overwrite with new key.
+
