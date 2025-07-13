@@ -1,0 +1,40 @@
+🗓️ Day 2: Set Interface in Java (HashSet, LinkedHashSet, TreeSet)
+
+* Set -
+- A collection that doesn't allow duplicate elements.
+- It extends Collection interface.
+- No duplicate values | Not guaranteed order | Cannot access elements using index
+
+* Main Set implementations -
+* HashSet-
+- No preserve order | Not sorted | Backed by Hash Table | 1 Null allowed | Add or contains [O(1)-avg]
+
+* LinkedHashSet-
+- Insertion order | Not sorted | Backed by Hash Table + LinkedList | 1 Null allowed | Add or contains [O(1)-avg]
+
+* TreeSet-
+- No preserve order | sorted(natural or custom) | Backed by Red-Black tree | No Null allowed | Add or contains [O(log n)]
+
+* When to use which set -
+- HashSet - Fast access | No order needed
+- LinkedHashSet - Maintain insertion order
+- TreeSet - Need elements sorted automatically
+
+* Interview Q&A-
+* Why does Set not allowed duplicates ?
+- Set is designed to represent a mathematical set(where each element is unique).
+- Internally HashSet uses hashcode() and equal() to check for duplicates.
+
+* Can a TreeSet store null elements ?
+- No, TreeSet doesn't allow null because it uses compareTo() or a comparator to sort elements.
+- And comparing null causes NullPointerException.
+
+* How does HashSet detect duplicates ?
+- It uses hashCode() to locate the bucket and then uses equals() to check actual equality.
+- If an object with the same hashCode and equals is already present, it won't be added again.
+
+- int hashCode = object.hashCode(); || index = hash % table.length; || then using equals() to check actual equality.
+
+
+NOTE :
+- If we try to add a duplicate in a Set, it silently ignored the duplicate value without throwing any error.
