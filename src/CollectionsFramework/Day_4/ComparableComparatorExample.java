@@ -41,7 +41,8 @@ public class ComparableComparatorExample {
 
         /**
          * comparator
-         *
+         * // Sort ascending by marks using Comparator
+         *  students.sort((s1, s2) -> s1.marks - s2.marks);
          */
 
     }
