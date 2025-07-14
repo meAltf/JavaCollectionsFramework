@@ -1,0 +1,41 @@
+🗓️ Day 4: Iterators, Comparators & Collections Utility Class
+
+* Iterator & ListIterator
+* Iterator :
+- Used to iterate through any collection (like list, set) | only moves forward
+- supports safe element removal while iterating
+- Iterator<Type> it = collection.iterator(); | while (it.hasNext()) { Type element = it.next(); }
+
+* ListIterator : for lists only
+- can iterate both forward and backward
+- can add, set and remove elements during iteration.
+- ListIterator<Type> lit = list.listIterator();
+
+* Collections Utility Class (java.util.Collections)
+-  Collections.sort(list)	            Sorts in natural order
+-  Collections.reverse(list)	        Reverses the list
+-  Collections.shuffle(list)	        Randomizes list order
+-  Collections.max(list)	            Finds max element
+-  Collections.min(list)	            Finds min element
+-  Collections.frequency(list, val)	    Counts occurrences
+
+* Comparable vs Comparator (Custom Sorting)
+* Comparable interface :
+- Used to  define natural ordering
+- Implemented by the class itself (self-comparison)
+- Override compareTo() method.
+
+* Comparator interface :
+- Used for custom sorting
+- Separate class or inline lambda fun/expression
+- Override compare(a,b)
+- Comparator<Student> byMarksDesc = (a, b) -> b.marks - a.marks;
+
+
+* Interview Q&A-
+* Diff b/w comparable & comparator :
+- comparable - Object defines it's natural ordering (compareTo()).
+- comparator - External class or lambda defines custom ordering (compare()).
+
+NOTE :
+1. We can sort a list of custom objects by | Implementing Comparable in the class or Using comparator with Collections.sort() or list.sort()
