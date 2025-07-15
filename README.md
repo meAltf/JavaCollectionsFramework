@@ -79,7 +79,7 @@ This repository contains a beginner-to-advanced learning journey through the **J
 ---
 
 ## ✅ Author
-[LinkedIn](https://www.linkedin.com/in/mealtf/)!  
+[Alataf](https://www.linkedin.com/in/mealtf/)!  
 _“Practice + Patterns + Purpose = Progress”_
 
 ---
