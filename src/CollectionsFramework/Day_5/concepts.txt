@@ -1,6 +1,25 @@
-Queue & its implementations
-PriorityQueue (Min/Max Heap behavior)
-Deque (Double-Ended Queue)
-Real-world use cases
-Interview questions and coding exercises
+🗓️ Day 5: Queue, PriorityQueue, Deque & Real-World Use Cases
 
+* Queue Interface | FIFO
+- Commonly used for task scheduling, buffering etc.
+- add(el)/offer(el) | remove()/poll() | peek()
+
+* Priority Queue | Min Heap/Max Heap
+- Elements are ordered based on natural ordering(Comparable) or custom comparator
+- By default used min Heap
+- useful for Dijkstra's algorithm, scheduling by priority
+
+* Dequeue
+- Insertion and removal from both ends
+- Implemented using LinkedList or ArrayDeque
+- useful for sliding window problems, LRU cache, Palindrome checkers
+
+* Interview Q&A -
+* How priorityQueue implemented internally ?
+- It uses a binary heap data structure
+- Default : Min Heap
+- With comparator : can make it max heap
+
+* Is priorityQueue thread-safe ?
+- No, it's not thread safe
+- use PriorityBlockingQueue for multi-threaded scenario
