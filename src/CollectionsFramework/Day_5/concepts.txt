@@ -1,0 +1,6 @@
+Queue & its implementations
+PriorityQueue (Min/Max Heap behavior)
+Deque (Double-Ended Queue)
+Real-world use cases
+Interview questions and coding exercises
+
