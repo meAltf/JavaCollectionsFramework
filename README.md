@@ -79,7 +79,7 @@ This repository contains a beginner-to-advanced learning journey through the **J
 ---
 
 ## ✅ Author
-Built with ❤️ by a Java enthusiast with guidance from ChatGPT  
+[LinkedIn](https://www.linkedin.com/in/mealtf/)!  
 _“Practice + Patterns + Purpose = Progress”_
 
 ---
